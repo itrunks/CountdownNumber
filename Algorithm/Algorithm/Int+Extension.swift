@@ -47,9 +47,9 @@ extension Int {
     }
     
     var large:Int {
-    get{
-        let closedRange = [25, 50, 75, 100]
-        return closedRange.randomElement()!
+        get{
+            let closedRange = [25, 50, 75, 100]
+            return closedRange.randomElement()!
         }
         
     }
