@@ -297,8 +297,8 @@ class GTViewController: UIViewController {
     }
     
     func startButtonEnabled(bgColor:UIColor, titleColor:UIColor){
-        self.btn_start.backgroundColor = .red
-        self.btn_start.setTitleColor(.darkGray, for: .normal)
+        self.btn_start.backgroundColor = bgColor
+        self.btn_start.setTitleColor(titleColor, for: .normal)
     }
     
 }

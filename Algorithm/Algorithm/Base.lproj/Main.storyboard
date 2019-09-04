@@ -141,7 +141,6 @@
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6p7-7A-ESN" customClass="RoundButton" customModule="Algorithm" customModuleProvider="target">
                                 <rect key="frame" x="177" y="368" width="60" height="60"/>
-                                <color key="backgroundColor" red="1" green="0.084040851149999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="Sy0-ZD-Bvr"/>
                                     <constraint firstAttribute="height" constant="60" id="ep0-7t-CY6"/>
