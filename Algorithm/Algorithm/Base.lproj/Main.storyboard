@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Circle dynamic-->
+        <!--Countdown Number -->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="GTViewController" customModule="Algorithm" customModuleProvider="target" sceneMemberID="viewController">
@@ -181,7 +181,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Circle dynamic" id="4oW-jM-va4">
+                    <navigationItem key="navigationItem" title="Countdown Number " id="4oW-jM-va4">
                         <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="fHW-Tk-818">
                             <connections>
                                 <action selector="reset:" destination="BYZ-38-t0r" id="LLx-83-LhG"/>

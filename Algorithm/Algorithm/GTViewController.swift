@@ -249,6 +249,7 @@ class GTViewController: UIViewController {
     @IBAction func startGameAction(_ sender: Any) {
         self.btn_reset.isEnabled = false
         self.btn_start.isEnabled = false
+        self.startButtonEnabled(bgColor: .lightGray, titleColor: .darkGray)
         self.timeLabel.text = " "
         for textField in textFields {
             let a:Int? = Int(textField.text!)
@@ -256,8 +257,10 @@ class GTViewController: UIViewController {
         }
         let randomInt = Int.random(in: 1...999)
         self.lbl_findNumber.text = "\(randomInt)"
-        
-        initializeUI()
+        DispatchQueue.main.async {
+             self.initializeUI()
+        }
+       
         startGame()
     }
     
@@ -265,7 +268,7 @@ class GTViewController: UIViewController {
     @IBAction func showResult(_ sender: Any) {
         var resultValue:String?
         if result == nil{
-            resultValue = "Numbers aren't random generate so for may select wrong digits to play, read game rules first!"
+            resultValue = "Numbers aren't random generate so for may select wrong digits to play"
         }else{
             resultValue = "\(self.midNumber ?? 0)" + (self.result?.output!)!
         }
