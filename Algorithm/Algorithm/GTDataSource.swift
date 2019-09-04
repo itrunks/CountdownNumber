@@ -18,7 +18,7 @@ class GTDataSource: NSObject, UIPickerViewDataSource, UIPickerViewDelegate {
     let largeNumber = [25, 50, 75, 100]
     let smallNumber:[Int] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     var segmentedControl: UISegmentedControl?
-
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -32,12 +32,12 @@ class GTDataSource: NSObject, UIPickerViewDataSource, UIPickerViewDelegate {
         }
     }
     
-func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-    if self.segmentedControl?.selectedSegmentIndex == 0 {
-        return "\(self.largeNumber[row])"
-    }else{
-        return "\(smallNumber[row])"
-    }
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        if self.segmentedControl?.selectedSegmentIndex == 0 {
+            return "\(self.largeNumber[row])"
+        }else{
+            return "\(smallNumber[row])"
+        }
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {

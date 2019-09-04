@@ -25,7 +25,7 @@ class GTResultViewModel{
             print("\(midNumber)" + result.output!);
             self.delegate?.resultWithCompeletion(result, midNumber: midNumber)
         }
-       
+        
     }
     
     
